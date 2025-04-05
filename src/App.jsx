@@ -25,7 +25,7 @@ function App() {
         onChange={handleInputChange}
       ></input>
       <button className="button" onClick={handleProgessValue}>
-        Submit Value
+        Submit
       </button>
       <ProgressBar progress={progress} />
     </div>
