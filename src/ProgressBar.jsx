@@ -7,7 +7,7 @@ const ProgressBar = ({ progress }) => {
       <div
         className="inner"
         style={{
-          width: `${progress}%`,
+          transform: `translateX(${progress - 100}%)`,
           color: progress > 2 ? "white" : "black",
         }}
         role="progressbar"
