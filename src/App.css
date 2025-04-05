@@ -19,3 +19,15 @@
 .inner {
   background-color: gray;
 }
+
+.box {
+  width: 40px;
+  height: 25px;
+  border: 2px solid #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button {
+  margin-bottom: 30px;
+}

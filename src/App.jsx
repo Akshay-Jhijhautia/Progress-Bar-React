@@ -4,11 +4,30 @@ import { useState } from "react";
 
 function App() {
   const [progress, setProgress] = useState(0);
+  const [input, setInput] = useState("");
+
+  function handleInputChange(event) {
+    setInput(event.target.value);
+  }
+
+  function handleProgessValue() {
+    setProgress(input);
+  }
 
   return (
     <div className="App">
       <h1>Progress Bar</h1>
-      <ProgressBar progress={90} />
+      <h2>Enter the Progress Value</h2>
+      <input
+        type="number"
+        className="box"
+        value={input}
+        onChange={handleInputChange}
+      ></input>
+      <button className="button" onClick={handleProgessValue}>
+        Submit Value
+      </button>
+      <ProgressBar progress={progress} />
     </div>
   );
 }
