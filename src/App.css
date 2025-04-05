@@ -11,13 +11,14 @@
 .outer {
   border: 1px solid black;
   width: 100%;
-  text-align: center;
+  text-align: right;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .inner {
   background-color: gray;
+  transition: 0.5s ease-in;
 }
 
 .box {
